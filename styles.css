@@ -1,0 +1,95 @@
+@import "./basicInput.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding: calc(var(--size__navbar-height) + 8px);
+}
+
+body {
+  background-color: grey;
+}
+
+main {
+  background-color: white;
+  height: 21cm;
+  width: 29.7cm;
+  margin: auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+section {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 8px;
+}
+
+.header__second-line {
+  display: grid;
+  grid-template-columns: 1fr 75px 75px;
+  gap: 20px;
+}
+
+.torso {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .basic-input {
+    max-width: fit-content;
+  }
+
+  input {
+    aspect-ratio: 1;
+    max-width: 75px;
+  }
+
+  label {
+    text-align: center;
+  }
+}
+
+.wunden {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: end;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .wunde {
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 30px;
+    aspect-ratio: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+}
+
+.other {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto 2fr;
+  gap: 20px;
+
+  .basic-input {
+    height: 100%;
+  }
+
+  input {
+    height: 100%;
+  }
+}
