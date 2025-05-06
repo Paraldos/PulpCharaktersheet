@@ -1,11 +1,11 @@
-@import "./basicInput.css";
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   scroll-padding: calc(var(--size__navbar-height) + 8px);
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 200;
 }
 
 body {
@@ -25,8 +25,27 @@ main {
 
 section {
   display: grid;
-  grid-template-rows: auto auto auto 1fr;
-  gap: 8px;
+  grid-template-rows: auto auto auto auto 1fr;
+  gap: 5px;
+  margin-bottom: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  svg {
+    height: 30px;
+    width: fit-content;
+    margin: 0 20px;
+  }
 }
 
 .header__second-line {
@@ -36,7 +55,6 @@ section {
 }
 
 .torso {
-  margin-top: 20px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 40px;
@@ -46,13 +64,15 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 5px;
 
   .basic-input {
     max-width: fit-content;
+    height: 100%;
   }
 
   input {
-    aspect-ratio: 1;
+    height: 100%;
     max-width: 75px;
   }
 
@@ -61,11 +81,23 @@ section {
   }
 }
 
+.other {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  gap: 10px;
+
+  .basic-input {
+    height: 100%;
+  }
+
+  input {
+    height: 100%;
+  }
+}
+
 .wunden {
   display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: end;
+  justify-content: space-around;
 
   p {
     font-size: 1.5rem;
@@ -80,14 +112,8 @@ section {
   }
 }
 
-.other {
-  display: grid;
-  grid-template-rows: 1fr 1fr auto 2fr;
-  gap: 20px;
-
-  .basic-input {
-    height: 100%;
-  }
+.notes {
+  grid-template-rows: 1fr;
 
   input {
     height: 100%;
