@@ -81,37 +81,6 @@ section {
   }
 }
 
-.other {
-  display: grid;
-  grid-template-rows: 1fr 1fr auto;
-  gap: 10px;
-
-  .basic-input {
-    height: 100%;
-  }
-
-  input {
-    height: 100%;
-  }
-}
-
-.wunden {
-  display: flex;
-  justify-content: space-around;
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  .wunde {
-    border: 2px solid black;
-    border-radius: 50px;
-    height: 30px;
-    aspect-ratio: 1;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-}
-
 .notes {
   grid-template-rows: 1fr;
 
