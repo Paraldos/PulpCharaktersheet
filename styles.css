@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding: calc(var(--size__navbar-height) + 8px);
   font-family: "Tagesschrift", system-ui;
   font-weight: 200;
 }
