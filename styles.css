@@ -32,7 +32,7 @@ section {
 
 .title {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   h1 {
@@ -44,7 +44,6 @@ section {
   svg {
     height: 30px;
     width: fit-content;
-    margin: 0 20px;
   }
 }
 
